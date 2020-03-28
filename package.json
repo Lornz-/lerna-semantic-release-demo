@@ -13,12 +13,18 @@
   "devDependencies": {
     "commitizen": "^4.0.3",
     "cz-lerna-changelog": "2.0.2",
+    "husky": "^4.2.3",
     "lerna": "^3.20.2"
   },
   "name": "walnut",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
   }
 }
