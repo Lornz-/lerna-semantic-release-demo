@@ -1,25 +1,24 @@
 {
+  "name": "demo",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
     "commit": "git-cz",
+    "build:app": "lerna run build --scope={@Lornz-/common,@Lornz-/app}",
+    "postinstall": "lerna bootstrap",
     "semantic-release": "lerna-semantic-release pre && lerna-semantic-release post && lerna-semantic-release perform",
-    "test": "lerna run test --scope={@walnut/common,@walnut/server}",
-    "new-version": "lerna version --conventional-commits --yes",
-    "diff": "lerna diff"
+    "test": "lerna run test --scope={@Lornz-/common,@Lornz-/web}",
+    "diff": "lerna diff",
+    "clean:modules": "rm -rf node_modules/ && rm -rf packages/*/node_modules/ && rm -r yarn.lock"
   },
   "devDependencies": {
     "commitizen": "^4.0.3",
     "cz-lerna-changelog": "2.0.2",
-    "eslint": "^6.8.0",
     "husky": "^4.2.3",
-    "lerna": "^3.20.2",
-    "lint-staged": "^10.0.9",
-    "prettier": "^2.0.2"
+    "lerna": "^3.20.2"
   },
-  "name": "walnut",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-lerna-changelog"
@@ -27,11 +26,7 @@
   },
   "husky": {
     "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
-      "pre-commit": "lint-staged"
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
-  },
-  "lint-staged": {
-    "*.{js,jsx}": "eslint"
   }
 }
