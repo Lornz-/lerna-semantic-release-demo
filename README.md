@@ -1,3 +1,3 @@
-# yarn-workspaces-lerna-semantic-release-example
+# lerna-semantic-release-example
 
-A simple project to get my hands on yarn workspaces and lerna-semantic-release
+A demo practicing both semantic release with lerna and yarn workspaces
