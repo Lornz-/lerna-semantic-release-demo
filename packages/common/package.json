@@ -1,5 +1,5 @@
 {
-  "name": "@Lornz-/common",
+  "name": "@lornz-/common",
   "version": "1.0.0",
   "main": "dist/index.js",
   "license": "MIT",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com/Lornz-/yarn-workspaces-lerna-semantic-release-example.git",
+    "url": "ssh://git@github.com:lornz-/lerna-semantic-release-demo.git",
     "directory": "packages/common"
   },
   "scripts": {
