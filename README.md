@@ -1,3 +1,3 @@
 # lerna-semantic-release-demo
 
-A demo practicing both semantic release with lerna and yarn workspaces
+A demo practicing semantic release with Lerna & Yarn Workspaces
