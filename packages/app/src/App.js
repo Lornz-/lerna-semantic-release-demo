@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 
 const App = () => {
-  const commonFunction = require("@Lornz-/common");
+  const commonFunction = require("@lornz-/common");
 
   commonFunction();
 

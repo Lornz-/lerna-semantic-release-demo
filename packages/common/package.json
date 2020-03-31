@@ -4,6 +4,7 @@
   "main": "dist/index.js",
   "license": "MIT",
   "publishConfig": {
+    "access": "public",
     "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
