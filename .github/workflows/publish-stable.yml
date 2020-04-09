@@ -1,0 +1,34 @@
+name: Publish stable
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: restore lerna
+        uses: actions/cache@master
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+            /tmp/**/*
+          key: ${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+      - name: Configure CI Git User
+        run: |
+          git config --global user.email octobot@github.com
+          git config --global user.name GitHub Actions
+      - uses: actions/setup-node@v1
+        with:
+          registry-url: "https://npm.pkg.github.com"
+      - name: Install dependencies
+        run: yarn install
+      - name: Publish beta to Github Packages
+        run: yarn run release-stable
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -8,18 +8,23 @@
     "commit": "git-cz",
     "build-clean": "rimraf ./packages/*/build ./packages/*/dist",
     "build:app": "yarn build-clean && lerna run build --scope={@lornz-/common,@lornz-/app}",
-    "release": "lerna publish --conventional-commits --yes ",
-    "beta-release": "lerna publish --canary --preid beta --dist-tag next",
+    "release-stable-deprecated": "lerna publish --conventional-commits --changelog-preset cz-lerna-changelog --yes ",
+    "release-beta-deprecated": "lerna publish --canary --preid beta --dist-tag next",
+    "release-beta": "cross-env HUSKY_BYPASS=true lerna publish --conventional-commits --conventional-prerelease --preid beta --create-release github --yes",
+    "release-stable": "cross-env HUSKY_BYPASS=true lerna publish --conventional-commits --conventional-graduate --create-release github --yes",
     "test": "lerna run test --scope={@lornz-/common,@lornz-/web}",
     "diff": "lerna diff",
     "clean-modules": "rimraf ./node_modules/ ./packages/*/node_modules/ ./yarn.lock",
     "clean-all": "yarn build-clean && yarn clean-modules"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "commitizen": "^4.0.3",
     "cz-lerna-changelog": "2.0.2",
     "husky": "^4.2.3",
     "lerna": "^3.20.2",
+    "release": "^6.1.0",
     "rimraf": "^3.0.2"
   },
   "config": {
@@ -29,7 +34,7 @@
   },
   "husky": {
     "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+      "commit-msg": "[[ -n $HUSKY_BYPASS ]] || commitlint -E HUSKY_GIT_PARAMS"
     }
   }
 }
