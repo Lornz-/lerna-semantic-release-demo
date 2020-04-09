@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3-beta.1](https://github.com/lornz-/lerna-semantic-release-demo/compare/@lornz-/common@1.1.3-beta.0...@lornz-/common@1.1.3-beta.1) (2020-04-09)
+
+
+### Bug Fixes
+
+* **common:** change common 5 to 6 ([08d3693](https://github.com/lornz-/lerna-semantic-release-demo/commit/08d36936fd560de5a9a2e48f855bc5fbc6f883fa))
+
+
+
+
+
 ## [1.1.3-beta.0](https://github.com/lornz-/lerna-semantic-release-demo/compare/@lornz-/common@1.1.2...@lornz-/common@1.1.3-beta.0) (2020-04-09)
 
 
