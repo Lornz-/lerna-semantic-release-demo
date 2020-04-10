@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.1-beta.1 (2020-04-10)
+
+**Note:** Version bump only for package @lornz-/server
+
+
+
+
+
+## <small>1.1.1-beta.0 (2020-04-10)</small>
+
+* chore(environment): update lerna config ([5d2fcf5](https://github.com/Lornz-/lerna-semantic-release-demo/commit/5d2fcf5))
+
+
+
+
+
 # 1.1.0 (2020-04-10)
 
 **Note:** Version bump only for package @lornz-/server

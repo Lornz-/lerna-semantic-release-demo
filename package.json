@@ -11,8 +11,8 @@
     "diff": "lerna diff",
     "build-clean": "rimraf ./packages/*/build ./packages/*/dist",
     "build:app": "yarn build-clean && lerna run build --scope={@lornz-/common,@lornz-/app}",
-    "release-beta": "cross-env HUSKY_BYPASS=true lerna publish --conventional-commits --conventional-prerelease --preid beta --create-release github --yes",
-    "release-stable": "cross-env HUSKY_BYPASS=true lerna publish --conventional-commits --conventional-graduate --create-release github --yes",
+    "release-beta": "cross-env HUSKY_BYPASS=true lerna publish --conventional-prerelease --preid beta",
+    "release-stable": "cross-env HUSKY_BYPASS=true lerna publish --conventional-graduate",
     "clean-modules": "rimraf ./node_modules/ ./packages/*/node_modules/ ./yarn.lock",
     "clean-all": "yarn build-clean && yarn clean-modules"
   },
