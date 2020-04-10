@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: ${{ github.event.pull_request.main.ref }}
+          ref: ${{ github.event.pull_request.head.sha }}
       - run: |
           git fetch --prune --unshallow
       - name: restore lerna
