@@ -4,6 +4,7 @@ on:
   pull_request:
     branches:
       - master
+    types: [opened]
 
 jobs:
   publish:
@@ -11,6 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.main.ref }}
+      - run: |
+          git fetch --prune --unshallow
       - name: restore lerna
         uses: actions/cache@master
         with:
