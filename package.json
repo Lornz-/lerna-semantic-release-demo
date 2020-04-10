@@ -6,6 +6,7 @@
   ],
   "scripts": {
     "commit": "git-cz",
+    "clean": "lerna clean --yes",
     "test": "lerna run test --scope={@lornz-/common,@lornz-/web}",
     "diff": "lerna diff",
     "build-clean": "rimraf ./packages/*/build ./packages/*/dist",
