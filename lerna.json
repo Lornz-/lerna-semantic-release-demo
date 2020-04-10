@@ -3,6 +3,7 @@
   "npmClient": "yarn",
   "useWorkspaces": true,
   "version": "independent",
+  "ignoreChanges": ["**/*.md", "yarn.lock"],
   "command": {
     "version": {
       "exact": true
