@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.1.6-beta.0 (2020-04-10)</small>
+
+* chore(environment): update lerna config ([5d2fcf5](https://github.com/lornz-/lerna-semantic-release-demo/commit/5d2fcf5))
+
+
+
+
+
 ## 0.1.5 (2020-04-10)
 
 **Note:** Version bump only for package @lornz-/app
