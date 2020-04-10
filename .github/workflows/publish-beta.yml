@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Publish stable to Github Packages
-        run: yarn run release-beta
+        run: yarn run release-beta --yes
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
