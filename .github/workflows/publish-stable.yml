@@ -17,7 +17,7 @@ jobs:
             node_modules
             */*/node_modules
             /tmp/**/*
-          key: ${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
       - name: Configure CI Git User
         run: |
           git config --global user.email octobot@github.com
@@ -27,6 +27,8 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
       - name: Install dependencies
         run: yarn install
+      - name: Build packages
+        run: yarn run build:app
       - name: Publish beta to Github Packages
         run: yarn run release-stable
         env:

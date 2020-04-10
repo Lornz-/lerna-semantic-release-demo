@@ -17,12 +17,14 @@ jobs:
           path: |
             node_modules
             */*/node_modules
-          key: ${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
       - uses: actions/setup-node@v1
         with:
           registry-url: "https://npm.pkg.github.com"
       - name: Install dependencies
         run: yarn install
+      - name: Build packages
+        run: yarn run build:app
       - name: Publish stable to Github Packages
         run: yarn run release-beta
         env:
