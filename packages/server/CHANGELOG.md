@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2-beta.2](https://github.com/Lornz-/lerna-semantic-release-demo/compare/@lornz-/server@1.1.2-beta.1...@lornz-/server@1.1.2-beta.2) (2020-04-12)
+
+
+### Bug Fixes
+
+* **server:** update some value ([4fb6879](https://github.com/Lornz-/lerna-semantic-release-demo/commit/4fb68795c32b250a852b1a76f7c3d490bca67cf6))
+
+
+
+
+
 ## [1.1.2-beta.1](https://github.com/Lornz-/lerna-semantic-release-demo/compare/@lornz-/server@1.1.2-beta.0...@lornz-/server@1.1.2-beta.1) (2020-04-11)
 
 **Note:** Version bump only for package @lornz-/server
