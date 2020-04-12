@@ -1,5 +1,4 @@
 name: Publish beta
-
 on:
   pull_request:
     branches:
@@ -11,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - with:
-          ref: ${{ github.event.pull_request.head.ref }}
+      - with: |
+          git fetch --prune --unshallow
       - name: restore lerna
         uses: actions/cache@master
         with:
