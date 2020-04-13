@@ -17,6 +17,12 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Features
 
 * **app:** add some features ([72f1df5](https://github.com/lornz-/lerna-semantic-release-demo/commit/72f1df5af0abcb242dcbed23a8f2f689fe99d86c))
+## [0.1.8-beta.0](https://github.com/lornz-/lerna-semantic-release-demo/compare/@lornz-/app@0.1.7...@lornz-/app@0.1.8-beta.0) (2020-04-13)
+
+
+### Bug Fixes
+
+* **app:** change background color ([1b76363](https://github.com/lornz-/lerna-semantic-release-demo/commit/1b76363b42cc4d567b16cd06376beaadef0e8863))
 
 
 

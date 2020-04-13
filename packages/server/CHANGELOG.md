@@ -17,6 +17,12 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Features
 
 * **server:** update message ([82dee8e](https://github.com/Lornz-/lerna-semantic-release-demo/commit/82dee8e54374fda6157f23141f179b6e08af12c5))
+## [1.2.2-beta.0](https://github.com/Lornz-/lerna-semantic-release-demo/compare/@lornz-/server@1.2.1...@lornz-/server@1.2.2-beta.0) (2020-04-13)
+
+
+### Bug Fixes
+
+* **server:** change value ([3c854f4](https://github.com/Lornz-/lerna-semantic-release-demo/commit/3c854f4bd6f373eb5357e0d685f8d8fcb52a87e1))
 
 
 
