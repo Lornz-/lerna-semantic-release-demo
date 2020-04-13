@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.8-beta.0](https://github.com/lornz-/lerna-semantic-release-demo/compare/@lornz-/app@0.1.7...@lornz-/app@0.1.8-beta.0) (2020-04-13)
+
+
+### Bug Fixes
+
+* **app:** change background color ([1b76363](https://github.com/lornz-/lerna-semantic-release-demo/commit/1b76363b42cc4d567b16cd06376beaadef0e8863))
+
+
+
+
+
 ## [0.1.7](https://github.com/lornz-/lerna-semantic-release-demo/compare/@lornz-/app@0.1.7-beta.0...@lornz-/app@0.1.7) (2020-04-13)
 
 **Note:** Version bump only for package @lornz-/app

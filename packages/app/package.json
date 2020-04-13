@@ -1,6 +1,6 @@
 {
   "name": "@lornz-/app",
-  "version": "0.1.7",
+  "version": "0.1.8-beta.0",
   "publishConfig": {
     "access": "public",
     "registry": "https://npm.pkg.github.com/"
