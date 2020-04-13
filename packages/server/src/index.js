@@ -1,4 +1,4 @@
 const commonFunction = require("@lornz-/common");
 
 commonFunction();
-console.log("hello from server test 5");
+console.log("hello from server test 6");
