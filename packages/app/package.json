@@ -1,6 +1,6 @@
 {
   "name": "@lornz-/app",
-  "version": "0.1.7-beta.0",
+  "version": "0.1.7",
   "publishConfig": {
     "access": "public",
     "registry": "https://npm.pkg.github.com/"
@@ -11,7 +11,7 @@
     "directory": "packages/app"
   },
   "dependencies": {
-    "@lornz-/common": "1.1.6-beta.0",
+    "@lornz-/common": "1.1.6",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
