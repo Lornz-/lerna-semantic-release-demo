@@ -10,8 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - run: |
-          git fetch --prune --unshallow
+          git fetch --depth=1 origin +refs/tags/*:refs/tags/*
       - name: restore lerna
         uses: actions/cache@master
         with:
@@ -30,7 +32,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Publish stable to Github Packages
-        run: yarn run release-stable --yes
+        run: yarn run publish-stable --yes
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
