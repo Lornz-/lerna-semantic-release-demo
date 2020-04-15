@@ -20,6 +20,7 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "prepare": "npm run build",
     "develop": "npm run start",
     "start": "react-scripts start",
     "build": "react-scripts build",
