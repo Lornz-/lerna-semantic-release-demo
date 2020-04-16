@@ -13,7 +13,7 @@
     "clean-build": "rimraf ./packages/*/build ./packages/*/dist",
     "clean-modules": "rimraf ./node_modules/ ./packages/*/node_modules/ ./yarn.lock",
     "clean-all": "yarn clean-build && yarn clean-modules",
-    "build": "lerna run build --scope={@lornz-/app,@lornz-/common}",
+    "build": "lerna run build --parallel --scope={@lornz-/app,@lornz-/common}",
     "publish-beta": "cross-env HUSKY_BYPASS=true lerna publish --conventional-prerelease --preid beta",
     "publish-stable": "cross-env HUSKY_BYPASS=true lerna publish --conventional-graduate"
   },
