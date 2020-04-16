@@ -1,6 +1,6 @@
 {
   "name": "@lornz-/server",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "main": "dist/index.js",
   "license": "MIT",
   "private": true,
@@ -11,6 +11,6 @@
     "test": "echo testing server with version: $npm_package_version"
   },
   "dependencies": {
-    "@lornz-/common": "1.1.9"
+    "@lornz-/common": "1.1.10"
   }
 }
