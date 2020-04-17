@@ -20,7 +20,7 @@ const App = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          React is awesome
+          React is awesome!!!!
         </a>
       </header>
     </div>
