@@ -6,6 +6,7 @@
   ],
   "scripts": {
     "commit": "git-cz",
+    "postinstall": "lerna bootstrap",
     "diff": "lerna diff",
     "test": "lerna run test --scope={@lornz-/common,@lornz-/web}",
     "clean": "lerna clean --yes",
