@@ -5,7 +5,6 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "prepare": "npm run build",
     "build": "rm -rf dist/ && BABEL_ENV=production babel src -d dist",
     "develop": "node src/index.js",
     "test": "echo testing server with version: $npm_package_version"
