@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/lornz-/lerna-semantic-release-demo/compare/@lornz-/app@0.2.7...@lornz-/app@0.3.0) (2020-04-17)
+
+
+### Features
+
+* **app:** change background color ([c9a14dd](https://github.com/lornz-/lerna-semantic-release-demo/commit/c9a14ddfd590b69e59244119aac4348cc35c594b))
+
+
+
+
+
 ## 0.2.7 (2020-04-17)
 
 
