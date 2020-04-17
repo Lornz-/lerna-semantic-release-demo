@@ -9,7 +9,6 @@
       "exact": true
     },
     "publish": {
-      "npmClient": "npm",
       "conventionalCommits": true,
       "createRelease": "github",
       "registry": "https://npm.pkg.github.com",
