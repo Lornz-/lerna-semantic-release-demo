@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/lornz-/lerna-semantic-release-demo/compare/@lornz-/app@0.3.0...@lornz-/app@0.3.1) (2020-04-17)
+
+
+### Bug Fixes
+
+* **app:** patch app styles ([7e4904b](https://github.com/lornz-/lerna-semantic-release-demo/commit/7e4904b0e33c0253a257c6e1847a07762d6c3858))
+
+
+
+
+
 # [0.3.0](https://github.com/lornz-/lerna-semantic-release-demo/compare/@lornz-/app@0.2.7...@lornz-/app@0.3.0) (2020-04-17)
 
 
