@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.6](https://github.com/Lornz-/lerna-semantic-release-demo/compare/@lornz-/server@1.4.5...@lornz-/server@1.4.6) (2020-04-17)
+
+**Note:** Version bump only for package @lornz-/server
+
+
+
+
+
 ## [1.4.5](https://github.com/Lornz-/lerna-semantic-release-demo/compare/@lornz-/server@1.4.4...@lornz-/server@1.4.5) (2020-04-17)
 
 **Note:** Version bump only for package @lornz-/server

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.12 (2020-04-17)
+
+
+### Bug Fixes
+
+* **common:** update value to 13 ([0d295d8](https://github.com/lornz-/lerna-semantic-release-demo/commit/0d295d8b745b99582a9ce5d4aaedcb2e2afbc39c))
+
+
+
+
+
 ## [1.1.11](https://github.com/lornz-/lerna-semantic-release-demo/compare/@lornz-/common@1.1.10...@lornz-/common@1.1.11) (2020-04-16)
 
 
